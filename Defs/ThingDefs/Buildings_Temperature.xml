@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Vent</defName>
+		<label>vent</label>
+		<thingClass>Building_Vent</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/TempControl/VentB</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <altitudeLayer>PawnUnused</altitudeLayer>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <statBases>
+			<WorkToMake>400</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<description>A simple vent for equalizing the temperature between two rooms without allowing people to walk between them.</description>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+    <comps>
+      <li Class="CommunityCoreLibrary.RestrictedPlacement_Properties">
+        <compClass>CommunityCoreLibrary.RestrictedPlacement_Comp</compClass>
+        <thingDefs>
+          <li>Wall</li>
+        </thingDefs>
+      </li>
+    </comps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>PlaceWorker_Vent</li>
+      <li>CommunityCoreLibrary.PlaceWorker_OnlyOnThing</li>
+      <li>RedistHeat.PlaceWorker_WallChecker</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+      <isEdifice>false</isEdifice>
+		</building>
+		<designationCategory>Temperature</designationCategory>
+    <designationHotKey>N</designationHotKey>
+  </ThingDef>
+
+</Defs>
