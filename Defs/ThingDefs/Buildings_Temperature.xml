@@ -22,7 +22,7 @@
     </graphicData>
     <altitudeLayer>PawnUnused</altitudeLayer>
 		<passability>Impassable</passability>
-		<fillPercent>1</fillPercent>
+		<fillPercent>0.99</fillPercent>
     <coversFloor>true</coversFloor>
     <blockLight>true</blockLight>
     <castEdgeShadows>true</castEdgeShadows>
@@ -37,20 +37,20 @@
 		<costList>
 			<Steel>30</Steel>
 		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <comps>
-      <li Class="CommunityCoreLibrary.RestrictedPlacement_Properties">
-        <compClass>CommunityCoreLibrary.RestrictedPlacement_Comp</compClass>
+      <li Class="CommunityCoreLibrary.CompProperties_RestrictedPlacement">
+        <compClass>CommunityCoreLibrary.CompRestrictedPlacement</compClass>
         <thingDefs>
           <li>Wall</li>
         </thingDefs>
       </li>
     </comps>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<placeWorkers>
-			<li>PlaceWorker_Vent</li>
+    <placeWorkers>
+      <li>PlaceWorker_Cooler</li>
       <li>CommunityCoreLibrary.PlaceWorker_OnlyOnThing</li>
       <li>RedistHeat.PlaceWorker_WallChecker</li>
-		</placeWorkers>
+    </placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<building>
 			<canPlaceOverWall>true</canPlaceOverWall>
