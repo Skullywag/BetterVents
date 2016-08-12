@@ -19,10 +19,16 @@
     <graphicData>
       <texPath>Things/Building/Misc/TempControl/VentB</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
     </graphicData>
     <altitudeLayer>PawnUnused</altitudeLayer>
 		<passability>Impassable</passability>
-		<fillPercent>1</fillPercent>
+		<fillPercent>0.99</fillPercent>
     <coversFloor>true</coversFloor>
     <blockLight>true</blockLight>
     <castEdgeShadows>true</castEdgeShadows>
@@ -37,27 +43,27 @@
 		<costList>
 			<Steel>30</Steel>
 		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <comps>
-      <li Class="CommunityCoreLibrary.RestrictedPlacement_Properties">
-        <compClass>CommunityCoreLibrary.RestrictedPlacement_Comp</compClass>
+      <li Class="CommunityCoreLibrary.CompProperties_RestrictedPlacement">
+        <compClass>CommunityCoreLibrary.CompRestrictedPlacement</compClass>
         <thingDefs>
           <li>Wall</li>
         </thingDefs>
       </li>
     </comps>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<placeWorkers>
-			<li>PlaceWorker_Vent</li>
+    <placeWorkers>
+      <li>PlaceWorker_Vent</li>
       <li>CommunityCoreLibrary.PlaceWorker_OnlyOnThing</li>
-      <li>RedistHeat.PlaceWorker_WallChecker</li>
-		</placeWorkers>
+      <li>BetterVents.PlaceWorker_OnWall</li>
+    </placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<building>
 			<canPlaceOverWall>true</canPlaceOverWall>
       <isEdifice>false</isEdifice>
 		</building>
 		<designationCategory>Temperature</designationCategory>
-    <designationHotKey>N</designationHotKey>
+    <designationHotKey>Misc4</designationHotKey>
   </ThingDef>
 
 </Defs>
