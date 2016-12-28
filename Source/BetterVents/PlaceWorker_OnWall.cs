@@ -6,11 +6,11 @@ namespace BetterVents
     public class PlaceWorker_OnWall : PlaceWorker
     {
 
-        public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot)
+        public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Thing thingToIgnore = null)
         {
             IntVec3 c = loc;
 
-            Building support = c.GetEdifice();
+            Building support = c.GetEdifice(Map);
             if (support == null)
             {
                 return (AcceptanceReport)("MessagePlacementOnSupport".Translate());

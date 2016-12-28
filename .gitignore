@@ -1,3 +1,4 @@
 /Source/*/Source-DLLs/*
 *Thumbs.db
 /source/*/Bin/*
+/source/*/Obj/*
