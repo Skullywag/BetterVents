@@ -34,7 +34,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <statBases>
-			<WorkToMake>400</WorkToMake>
+      <WorkToBuild>400</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
@@ -44,17 +44,8 @@
 			<Steel>30</Steel>
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <comps>
-      <li Class="CommunityCoreLibrary.CompProperties_RestrictedPlacement">
-        <compClass>CommunityCoreLibrary.CompRestrictedPlacement</compClass>
-        <thingDefs>
-          <li>Wall</li>
-        </thingDefs>
-      </li>
-    </comps>
     <placeWorkers>
       <li>PlaceWorker_Vent</li>
-      <li>CommunityCoreLibrary.PlaceWorker_OnlyOnThing</li>
       <li>BetterVents.PlaceWorker_OnWall</li>
     </placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
