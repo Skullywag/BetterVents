@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Vent"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/Misc/TempControl/VentB</texPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Vent"]/altitudeLayer</xpath>
+		<value>
+			<altitudeLayer>PawnUnused</altitudeLayer>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Vent"]/fillPercent</xpath>
+		<value>
+			<fillPercent>0.99</fillPercent>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Vent"]/placeWorkers</xpath>
+		<value>
+			<li>BetterVents.PlaceWorker_OnWall</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Vent"]/building</xpath>
+		<value>
+			<isEdifice>false</isEdifice>
+		</value>
+	</Operation>
+
+</Patch>
