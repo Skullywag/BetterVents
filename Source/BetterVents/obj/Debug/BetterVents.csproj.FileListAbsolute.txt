@@ -29,3 +29,6 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BetterVents-A16\Sour
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BetterVents-A16\Source\BetterVents\bin\Debug\NAudio.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BetterVents-A16\Source\BetterVents\bin\Debug\NVorbis.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BetterVents-A16\Source\BetterVents\bin\Debug\UnityEngine.xml
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BetterVents-master\Assemblies\BetterVents.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BetterVents-master\Source\BetterVents\obj\Debug\BetterVents.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BetterVents-master\Source\BetterVents\obj\Debug\BetterVents.dll
