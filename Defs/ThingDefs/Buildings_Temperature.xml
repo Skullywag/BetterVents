@@ -33,6 +33,13 @@
     <blockLight>true</blockLight>
     <castEdgeShadows>true</castEdgeShadows>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
+	<comps>
+      <li Class="CompProperties_Flickable">
+        <commandTexture>UI/Commands/Vent</commandTexture>
+        <commandLabelKey>CommandDesignateOpenCloseVentLabel</commandLabelKey>
+        <commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
+      </li>
+	</comps>
     <statBases>
       <WorkToBuild>400</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
