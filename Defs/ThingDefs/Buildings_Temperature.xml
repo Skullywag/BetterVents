@@ -3,13 +3,12 @@
   
   <ThingDef Name="BuildingBase" Abstract="True">
     <category>Building</category>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <repairEffect>Repair</repairEffect>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <filthLeaving>BuildingRubble</filthLeaving>
+	<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
   </ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
