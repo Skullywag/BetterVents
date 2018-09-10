@@ -1,61 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-  <ThingDef Name="BuildingBase" Abstract="True">
-    <category>Building</category>
-    <selectable>true</selectable>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <repairEffect>Repair</repairEffect>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-	<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-  </ThingDef>
-
 	<ThingDef ParentName="BuildingBase">
-		<defName>Vent</defName>
-		<label>vent</label>
+		<defName>WallVent</defName>
+		<label>Wall Vent</label>
+		<description>A wall-mounted vent for equalizing the temperature between two rooms without allowing people to walk between them. Doesn't replace the wall.</description>
 		<thingClass>Building_Vent</thingClass>
-    <graphicData>
-      <texPath>Things/Building/Misc/TempControl/VentB</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      
-    </graphicData>
-    <altitudeLayer>PawnUnused</altitudeLayer>
+		<graphicData>
+			<texPath>Things/Building/Misc/TempControl/VentB</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>Impassable</passability>
 		<fillPercent>0.99</fillPercent>
-    <coversFloor>true</coversFloor>
-    <blockLight>true</blockLight>
-    <castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>1.0</staticSunShadowHeight>
-	<comps>
-      <li Class="CompProperties_Flickable">
-        <commandTexture>UI/Commands/Vent</commandTexture>
-        <commandLabelKey>CommandDesignateOpenCloseVentLabel</commandLabelKey>
-        <commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
-      </li>
-	</comps>
-    <statBases>
-      <WorkToBuild>400</WorkToBuild>
+		<coversFloor>true</coversFloor>
+		<blockLight>true</blockLight>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<statBases>
+			<WorkToBuild>400</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<tickerType>Rare</tickerType>
-		<description>A simple vent for equalizing the temperature between two rooms without allowing people to walk between them.</description>
 		<costList>
 			<Steel>30</Steel>
 		</costList>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <placeWorkers>
-      <li>PlaceWorker_Vent</li>
-      <li>BetterVents.PlaceWorker_OnWall</li>
-    </placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>PlaceWorker_Vent</li>
+			<li>BetterVents.PlaceWorker_OnWall</li>
+		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<building>
 			<canPlaceOverWall>true</canPlaceOverWall>
-      <isEdifice>false</isEdifice>
+			<isEdifice>false</isEdifice>
 		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
 		<designationCategory>Temperature</designationCategory>
-    <designationHotKey>Misc4</designationHotKey>
-  </ThingDef>
-
+		<designationHotKey>Misc5</designationHotKey>
+		<comps>
+			<li Class="CompProperties_Flickable">
+				<commandTexture>UI/Commands/Vent</commandTexture>
+				<commandLabelKey>CommandDesignateOpenCloseVentLabel</commandLabelKey>
+				<commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>
