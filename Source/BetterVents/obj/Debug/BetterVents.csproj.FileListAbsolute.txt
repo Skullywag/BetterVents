@@ -1,3 +1,0 @@
-E:\Rimworld\My Mods\1.0U\Mods\BetterVents\Assemblies\BetterVents.dll
-E:\Rimworld\My Mods\1.0U\Mods\BetterVents\Source\BetterVents\obj\Debug\BetterVents.csprojResolveAssemblyReference.cache
-E:\Rimworld\My Mods\1.0U\Mods\BetterVents\Source\BetterVents\obj\Debug\BetterVents.dll

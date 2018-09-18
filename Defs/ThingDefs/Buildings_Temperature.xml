@@ -53,7 +53,7 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <placeWorkers>
       <li>PlaceWorker_Vent</li>
-      <li>BetterVents.PlaceWorker_OnWall</li>
+      <li>BetterCV.PlaceWorker_OnWall</li>
     </placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<building>
