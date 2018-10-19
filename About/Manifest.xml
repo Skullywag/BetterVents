@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
     <identifier>BetterVents</identifier>
-    <version>1.7.0.3</version>
+    <version>1.7.0.4</version>
     <manifestUri>https://rawgit.com/Antaios/BetterVents/master/About/Manifest.xml</manifestUri>
     <downloadUri>https://github.com/Antaios/BetterVents/releases</downloadUri>
 </Manifest>
