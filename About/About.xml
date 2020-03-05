@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>BetterVents</name>
-	<author>Latta, Skullywag</author>
-	<targetVersion>0.17.1554</targetVersion>
-	<description>Adds vents that sit inside walls and look friggin beautiful doing it, thank Latta for this. Updated to A17 by Spdskatr</description>
+	<author>Latta, Skullywag, Spdskatr, Antaios</author>
+	<targetVersion>1.0.2059</targetVersion>
+	<description>Adds vents that sit inside walls.</description>
 </ModMetaData>

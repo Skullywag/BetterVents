@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <ThingDef Name="BuildingBase" Abstract="True">
+  <ThingDef Name="CVBuildingBase" Abstract="True">
     <category>Building</category>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <repairEffect>Repair</repairEffect>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <filthLeaving>BuildingRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
   </ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="CVBuildingBase">
 		<defName>Vent</defName>
 		<label>vent</label>
 		<thingClass>Building_Vent</thingClass>
@@ -50,10 +50,10 @@
 		<costList>
 			<Steel>30</Steel>
 		</costList>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <placeWorkers>
       <li>PlaceWorker_Vent</li>
-      <li>BetterVents.PlaceWorker_OnWall</li>
+      <li>BetterCV.PlaceWorker_OnWall</li>
     </placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<building>
