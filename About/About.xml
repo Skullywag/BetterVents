@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>BetterVents</name>
-	<author>Latta, Skullywag, Spdskatr, Antaios</author>
-	<targetVersion>1.0.2059</targetVersion>
-	<description>Adds vents that sit inside walls.</description>
+  <name>BetterVents</name>
+  <author>Latta, Skullywag, Spdskatr, Antaios</author>
+  <supportedVersions>
+      <li>1.0</li>
+      <li>1.1</li>
+  </supportedVersions>
+  <packageId>antaioz.bettervents</packageId>
+  <description>Adds vents that sit inside walls.</description>
 </ModMetaData>

@@ -50,7 +50,7 @@
 		<costList>
 			<Steel>30</Steel>
 		</costList>
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <placeWorkers>
       <li>PlaceWorker_Vent</li>
       <li>BetterCV.PlaceWorker_OnWall</li>
